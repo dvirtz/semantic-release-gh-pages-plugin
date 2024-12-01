@@ -79,10 +79,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/qiwi/semantic-release-gh-pages-plugin.git"
+    "url": "https://github.com/dvirtz/semantic-release-gh-pages-plugin.git"
   },
   "bugs": {
-    "url": "https://github.com/qiwi/semantic-release-gh-pages-plugin/issues"
+    "url": "https://github.com/dvirtz/semantic-release-gh-pages-plugin/issues"
   },
   "author": "Anton Golub <mailbox@antongolub.ru>",
   "license": "MIT"
