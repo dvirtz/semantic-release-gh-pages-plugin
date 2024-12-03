@@ -1,5 +1,4 @@
 import { ICallable } from '@qiwi/substrate-types'
-import AggregateError from 'aggregate-error'
 import fs from 'node:fs'
 import path from 'node:path'
 
@@ -92,22 +91,6 @@ describe('index', () => {
         pullTagsBranch: DEFAULT_PULL_TAGS_BRANCH
       })
       expect(result).toBeUndefined()
-    })
-
-    it('asserts GH_TOKEN', async () => {
-      const { verifyConditions } = require('../../main/ts')
-      const context = {
-        logger,
-        options: {
-          ...globalConfig,
-          [step]: [{ path }]
-        },
-        cwd,
-        env: { GITHUB_TOKEN: undefined }
-      }
-
-      await expect(verifyConditions(pluginConfig, context))
-        .rejects.toEqual(new AggregateError(['env.GH_TOKEN is required by gh-pages plugin']))
     })
 
     describe('repo check', () => {

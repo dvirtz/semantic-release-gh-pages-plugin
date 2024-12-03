@@ -9,7 +9,7 @@ gh-pages publishing plugin for [semantic-release](https://github.com/semantic-re
 
 | Step               | Description |
 |--------------------|-------------|
-| `verifyConditions` | Verify the presence of the `GH_TOKEN` set via [environment variables](#environment-variables). |
+| `verifyConditions` | Verify the configuration. |
 | `publish`          | Pushes commit to the [documentation branch](#options) |
 
 ## Install
@@ -68,7 +68,7 @@ or even shorter if default settings are used:
 
 | Variable                     | Description                                               |
 |------------------------------|-----------------------------------------------------------|
-| `GH_TOKEN` or `GITHUB_TOKEN` | **Required.** The token used to authenticate with GitHub. |
+| `GH_TOKEN` or `GITHUB_TOKEN` | **Optional.** The token used to authenticate with GitHub. |
 
 ### Options
 

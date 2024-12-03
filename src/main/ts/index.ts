@@ -17,7 +17,7 @@ let _config: any
 export const verifyConditions = async (pluginConfig: any, context: TContext) => {
   const { logger } = context
   const config = await resolveConfig(pluginConfig, context, undefined, 'publish')
-  const { token, repo, src, ciBranch, docsBranch } = config
+  const { repo, src, ciBranch, docsBranch } = config
 
   if (!docsBranch) {
     logger.log(`gh-pages [skipped]: 'docsBranch' is empty for ${ciBranch}`)
@@ -25,11 +25,6 @@ export const verifyConditions = async (pluginConfig: any, context: TContext) => 
   }
 
   logger.log('verify gh-pages config')
-
-
-  if (!token) {
-    throw new AggregateError(['env.GH_TOKEN is required by gh-pages plugin'])
-  }
 
   if (!repo) {
     throw new AggregateError(['package.json repository.url does not match github.com pattern'])
