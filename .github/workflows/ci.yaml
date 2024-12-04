@@ -40,6 +40,7 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_PROVENANCE: true
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm_config_yes=true npx zx-semrel
 
   pr:
