@@ -1,3 +1,8 @@
+## [5.2.13](https://github.com/dvirtz/semantic-release-gh-pages-plugin/compare/v5.2.12...v5.2.13) (2024-12-04)
+
+### Fixes & improvements
+* fix: make GH_TOKEN optional ([a6ece4f](https://github.com/dvirtz/semantic-release-gh-pages-plugin/commit/a6ece4f42fc3edf43b166a4b320b5d4829b9448c))
+
 ## [5.2.12](https://github.com/dvirtz/semantic-release-gh-pages-plugin/compare/undefined...v5.2.12) (2024-12-01)
 
 ### Features
